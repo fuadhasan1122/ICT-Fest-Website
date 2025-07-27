@@ -55,14 +55,20 @@ body {
 
 /* Events Section */
 .events-section h1 {
-   color: #e6f107;
+   color: #094C9B;
     font-size: 2rem;
   padding: 1rem 1rem;
   text-align: center;
   
 }
+.events-section
+{
+  margin-bottom: 20px ;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .events-section p {
-    color: #e6f107;
+    color: #008BCC;
     font-size: 1.5rem;
 
   text-align: center;
@@ -76,7 +82,7 @@ body {
 }
 
 .event-card {
-  background: rgb(3, 71, 100);
+  background: #094C9B;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -160,15 +166,17 @@ body {
 .sponsor-section {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: rgb(4, 86, 70);
+  background-color: #094C9B;
   overflow: hidden;
-  
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 .sponsor-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #e6f107;
+  color: white;
 }
 
 .sponsor-marquee {
@@ -212,13 +220,13 @@ body {
   }
 }
 
-
 /* Footer */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
+  margin-top: 40px;
 }
 
 .footer-icons {
@@ -231,9 +239,7 @@ footer {
   font-size: 1.5rem;
 }
 
-
 /* navbar */
-
 * {
     margin: 0;
     padding: 0;
@@ -283,35 +289,21 @@ body {
     display: block;
 }
 
+
+.nav-links a {
+    color: white; /* Default text color */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    display: inline-block;
+}
+
 .nav-links a:hover {
-    color: #3498db;
+    color: #aaaeb0; /* Hover text color */
+    transform: translateY(-3px);
+    text-shadow: 0 3px 8px rgba(111, 113, 115, 0.5);
+    /* Adding a subtle glow effect */
+    box-shadow: 0 4px 8px rgba(153, 226, 242, 0.2);
 }
-
-.search-container {
-    display: flex;
-    align-items: center;
-}
-
-.search-container input {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-.search-container input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.mobile-menu {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-
 
 /* navbar end */
