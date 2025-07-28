@@ -17,3 +17,6 @@ const eventDate = new Date("2025-07-31T00:00:00").getTime();
         countdown.innerHTML = "<h3>The event has started!</h3>";
       }
     }, 1000);
+
+  
+
