@@ -18,5 +18,27 @@ const eventDate = new Date("2025-07-31T00:00:00").getTime();
       }
     }, 1000);
 
-  
+    document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                
+                // Change icon between ☰ and ✕ when clicked
+                if (navLinks.classList.contains('active')) {
+                    mobileMenuBtn.textContent = '✕';
+                } else {
+                    mobileMenuBtn.textContent = '☰';
+                }
+            });
+
+            // Close menu when a link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.textContent = '☰';
+                });
+            });
+        });
 
