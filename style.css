@@ -66,6 +66,7 @@ body {
   margin-bottom: 20px ;
   padding-left: 10px;
   padding-right: 10px;
+   
 }
 .events-section p {
     color: #008BCC;
@@ -82,7 +83,14 @@ body {
 }
 
 .event-card {
-  background: #094C9B;
+ background: 
+    linear-gradient(
+      135deg,
+      rgba(4, 92, 90, 0.9) 0%, 
+      rgba(34, 180, 168, 0.8) 50%, 
+      rgba(12, 66, 181, 0.6) 100%
+    );
+  
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -96,6 +104,7 @@ body {
 .event-card img {
   width: 100%;
   height: 180px;
+ 
   object-fit: cover;
 }
 
@@ -118,7 +127,7 @@ body {
 }
 
 .badge.solo {
-  background-color: #3498db;
+  background-color: #0c36b4;
 }
 
 .badge.team {
@@ -251,62 +260,101 @@ body {
     background-color: #f5f5f5;
 }
 
-.navbar {
-    background-color: #094C9B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav-logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-    position: relative;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    padding: 10px 0;
-    display: block;
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 
-.nav-links a {
-    color: white; /* Default text color */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transform: perspective(1px) translateZ(0);
-    position: relative;
-    display: inline-block;
+        .navbar {
+            background: #1a237e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: relative;
+        }
+        .navbar {
+  position: sticky; /* or 'fixed' if it's a fixed header */
+  z-index: 1000;   /* Higher than cards */
 }
 
-.nav-links a:hover {
-    color: #aaaeb0; /* Hover text color */
-    transform: translateY(-3px);
-    text-shadow: 0 3px 8px rgba(111, 113, 115, 0.5);
-    /* Adding a subtle glow effect */
-    box-shadow: 0 4px 8px rgba(153, 226, 242, 0.2);
+.event-card {
+  position: relative;
+  z-index: 1;      
 }
 
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            padding: 0.5rem;
+        }
+
+        .nav-links li a:hover {
+            color: #ffc107;
+        }
+
+        .mobile-menu {
+            font-size: 1.8rem;
+            cursor: pointer;
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: #094C9B;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transition: all 0.5s ease;
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 10px;
+            }
+        }
+     
 /* Add these to your existing CSS */
 body {
     padding-top: 70px; /* Adjust based on your navbar height */
@@ -356,3 +404,83 @@ body {
 }
 
 /* navbar end */
+
+/* bootcamp css */
+/* .bootcamp-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+} */
+
+.bootcamp-header h1 {
+   padding-top: 20px;
+   text-align: center;
+    color: #300c83;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bootcamp-header p {
+  padding-top: 10px;
+   text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+
+/* registraiton button */
+.reg-button {
+  
+  background-color: #300c83;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(48, 12, 131, 0.3);
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.reg-button:hover {
+  background-color: #4415a8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(48, 12, 131, 0.4);
+}
+
+.reg-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(48, 12, 131, 0.4);
+}
+
+/* Optional: Add a subtle shine effect */
+.reg-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.3s;
+}
+
+.reg-button:hover::after {
+  left: 100%;
+  top: 100%;
+}

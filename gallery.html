@@ -6,13 +6,31 @@
     <title>ICT Fest - Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar will be inserted here by your existing JavaScript -->
 
+  <nav class="navbar">
+        <div class="nav-logo">ICT FEST 2025</div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- <li><a href="#">Contest</a></li> -->
+            <li><a href="boothcamp.html">CP Boothcamp</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+       
+        
+        <div class="mobile-menu" id="mobileMenuBtn">☰</div>
+    </nav>
+
     <section class="gallery-section">
         <div class="container">
-            <h2 class="section-title">ICT Fest Gallery</h2>
+           
             <p class="section-subtitle">Relive the memories from our past events</p>
             
             <div class="gallery-filter">
@@ -26,9 +44,9 @@
             <div class="gallery-grid">
                 <!-- Gallery Item 1 -->
                 <div class="gallery-item contest">
-                    <img src="/image/award.jpg" alt="ICT Contest">
+                    <img src="/image/programming_contest.jpg" alt="ICT Contest">
                     <div class="gallery-overlay">
-                        <h3>Programming Contest 2023</h3>
+                        <h3>Programming Contest</h3>
                         <p>Participants solving complex algorithms</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
@@ -36,20 +54,20 @@
                 
                 <!-- Gallery Item 2 -->
                 <div class="gallery-item opening">
-                    <img src="/image/cp.jpg" alt="Opening Ceremony">
+                    <img src="/image/innus.jpg" alt="Opening Ceremony">
                     <div class="gallery-overlay">
-                        <h3>Opening Ceremony 2023</h3>
-                        <p>Chief guest addressing the audience</p>
+                        <h3>Opening Ceremony</h3>
+                        <p>Chief guest VC sir & professor Abdullah selim sir has innugurated SIU ICT fest 2025</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
                 
                 <!-- Gallery Item 3 -->
                 <div class="gallery-item workshop">
-                    <img src="/image/484483117_1057896449688697_3890986751493401543_n.jpg" alt="Workshop Session">
+                    <img src="/image/career talk.jpg" alt="Workshop Session">
                     <div class="gallery-overlay">
-                        <h3>AI Workshop 2023</h3>
-                        <p>Hands-on machine learning session</p>
+                        <h3>Career talk</h3>
+                        <p>It's great session from the SIU alumni who operate a IT farm in Sylhet that is Authlab</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
@@ -58,8 +76,8 @@
                 <div class="gallery-item award">
                     <img src="/image/484509074_1057896239688718_6415784027072500924_n.jpg" alt="Award Ceremony">
                     <div class="gallery-overlay">
-                        <h3>Award Ceremony 2023</h3>
-                        <p>Winners receiving their trophies</p>
+                        <h3>Prize giving Ceremony</h3>
+                        <p>VC sir sharing his speech for winners</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
@@ -68,8 +86,8 @@
                 <div class="gallery-item contest">
                     <img src="/image/award.jpg" alt="Hackathon">
                     <div class="gallery-overlay">
-                        <h3>Hackathon 2022</h3>
-                        <p>Teams working on innovative solutions</p>
+                        <h3>Prize giving Ceremony</h3>
+                        <p>Participant from Competitive programming receiving prize from VC sir, treasurer sir</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
@@ -78,18 +96,18 @@
                 <div class="gallery-item workshop">
                     <img src="/image/award3.jpg" alt="Robotics Workshop">
                     <div class="gallery-overlay">
-                        <h3>Robotics Workshop 2022</h3>
-                        <p>Participants building robots</p>
+                        <h3>Prize giving Ceremony</h3>
+                        <p>head of law department sharing his insights on the prize giving ceremony</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
                 
                 <!-- Gallery Item 7 -->
                 <div class="gallery-item opening">
-                    <img src="/image/award3.jpg" alt="Festival Stage">
+                    <img src="/image/headofdeptspeech.jpg" alt="Festival Stage">
                     <div class="gallery-overlay">
-                        <h3>ICT Fest 2022</h3>
-                        <p>Main stage decorations</p>
+                        <h3>Speech from head of CSE</h3>
+                        <p>Head of department of CSE , sharing his insights on SIU ICT fest 2025</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
@@ -98,16 +116,14 @@
                 <div class="gallery-item award">
                     <img src="/image/awardtoguest.jpg" alt="Winners">
                     <div class="gallery-overlay">
-                        <h3>2022 Winners</h3>
-                        <p>Champion team celebration</p>
+                        <h3>Honouring guests by Head of CSE</h3>
+                        <p>Guest, Alumni who has great session on career talk</p>
                         <a href="#" class="view-btn">View Full Image</a>
                     </div>
                 </div>
             </div>
             
-            <div class="load-more">
-                <button id="load-more-btn">Load More Photos</button>
-            </div>
+           
         </div>
     </section>
 
@@ -160,5 +176,7 @@
     // Lightbox functionality would go here in a complete implementation
 });
     </script>
+    
+  <script src="script.js"></script>
 </body>
 </html>
