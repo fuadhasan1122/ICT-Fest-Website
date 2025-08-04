@@ -41,4 +41,4 @@ const eventDate = new Date("2025-07-31T00:00:00").getTime();
                 });
             });
         });
-
+ 

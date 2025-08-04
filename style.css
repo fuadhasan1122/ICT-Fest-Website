@@ -278,6 +278,15 @@ body {
             padding: 1rem 2rem;
             position: relative;
         }
+        .navbar {
+  position: sticky; /* or 'fixed' if it's a fixed header */
+  z-index: 1000;   /* Higher than cards */
+}
+
+.event-card {
+  position: relative;
+  z-index: 1;      
+}
 
         .nav-logo {
             font-size: 1.5rem;
@@ -395,3 +404,83 @@ body {
 }
 
 /* navbar end */
+
+/* bootcamp css */
+/* .bootcamp-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+} */
+
+.bootcamp-header h1 {
+   padding-top: 20px;
+   text-align: center;
+    color: #300c83;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bootcamp-header p {
+  padding-top: 10px;
+   text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+
+/* registraiton button */
+.reg-button {
+  
+  background-color: #300c83;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(48, 12, 131, 0.3);
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.reg-button:hover {
+  background-color: #4415a8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(48, 12, 131, 0.4);
+}
+
+.reg-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(48, 12, 131, 0.4);
+}
+
+/* Optional: Add a subtle shine effect */
+.reg-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.3s;
+}
+
+.reg-button:hover::after {
+  left: 100%;
+  top: 100%;
+}
