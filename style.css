@@ -6,57 +6,56 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Keep modern, techy font */
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background: linear-gradient(135deg, #08212E 0%, #1A4A66 100%); /* Gradient for depth and festivity */
-  color: #CFF6F8; /* Brighter, more vibrant cyan for premium feel */
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  background: linear-gradient(135deg, #08212E 0%, #1A4A66 100%);
+  color: #CFF6F8;
+  overflow-x: hidden;
 }
 
 /* Banner */
 .main-banner img {
   width: 100%;
-  height: fit-content;
-  filter: brightness(1.1) saturate(1.2); /* Enhance image vibrancy */
-  margin-top: 4px solid #00D4FF;
-  border-bottom: 4px solid #00D4FF; /* Neon accent for techy festival vibe */
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); /* Subtle neon glow */
+  height: auto;
+  filter: brightness(1.1) saturate(1.2);
+  border-bottom: 4px solid #00D4FF;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
 }
 
 /* Countdown */
 #countdown {
-  margin: 1.5rem auto;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: 0.75rem;
   font-weight: 700;
-  color: #FFFFFF; /* White for better contrast */
-  font-size: 2rem;
-  letter-spacing: 1.5px;
-  font-family: 'Orbitron', sans-serif; /* Keep futuristic font */
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.8), 0 0 12px rgba(0, 212, 255, 0.5); /* Neon glow */
-  background: linear-gradient(90deg, #008BCC, #00D4FF); /* Gradient for premium, techy look */
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.8), 0 0 12px rgba(0, 212, 255, 0.5);
+  background: linear-gradient(90deg, #008BCC, #00D4FF);
   text-align: center;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.4); /* Enhanced glow */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 90%;
 }
 
 #countdown:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6); /* Stronger glow */
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
 }
 
 /* Fest Heading */
 .fest-heading {
   text-align: center;
-  padding: 3rem 1.5rem;
-  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%); /* Vibrant, techy gradient */
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%);
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deep shadow for premium depth */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Sparkle effect for fest-heading */
 .fest-heading::before {
   content: '';
   position: absolute;
@@ -69,57 +68,56 @@ body {
 }
 
 .fest-heading:hover::before {
-  left: 100%; /* Sparkle moves across on hover */
+  left: 100%;
 }
 
 .fest-heading h1 {
-  color: #FFFFFF; /* White for high contrast */
-  font-size: 5.5rem;
+  color: #FFFFFF;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800; /* Bolder for premium impact */
-  text-transform: uppercase; /* Bold, festive emphasis */
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); /* Neon glow */
-  margin-bottom: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5);
+  margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
 }
 
 .fest-heading h1:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
+  transform: translateY(-3px);
 }
 
 .fest-heading p {
-  color: #CFF6F8; /* Lighter cyan for harmony */
-  font-size: 2.2rem;
+  color: #CFF6F8;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Slightly bolder for premium feel */
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); /* Subtle glow */
-  margin-bottom: 0.75rem;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5);
+  margin-bottom: 0.5rem;
 }
 
 /* Events Section */
 .events-section h1 {
-  color: #FFFFFF; /* White for high contrast and premium feel */
-  font-size: 2.5rem; /* Slightly larger for impact */
-  padding: 1.5rem 1rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  padding: 1rem;
   text-align: center;
-  font-family: 'Montserrat', sans-serif; /* Keep bold, modern font */
-  font-weight: 800; /* Bolder for festive emphasis */
-  text-transform: uppercase; /* Adds festive boldness */
-  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%); /* Vibrant techy gradient */
-  border-radius: 0.75rem; /* Rounded for softness */
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4), 0 0 8px rgba(0, 212, 255, 0.3); /* Neon glow */
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7); /* Subtle neon text glow */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4), 0 0 8px rgba(0, 212, 255, 0.3);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .events-section h1:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.6), 0 0 12px rgba(0, 212, 255, 0.5); /* Enhanced glow */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.6), 0 0 12px rgba(0, 212, 255, 0.5);
 }
 
-/* Sparkle effect for h1 */
 .events-section h1::before {
   content: '';
   position: absolute;
@@ -132,141 +130,94 @@ body {
 }
 
 .events-section h1:hover::before {
-  left: 100%; /* Sparkle moves across on hover */
+  left: 100%;
 }
 
 .events-section {
-  margin-bottom: 3rem; /* Increased for better spacing */
-  padding: 2rem; /* More padding for a spacious, premium feel */
-  background: linear-gradient(180deg, rgba(8, 33, 46, 0.9) 0%, rgba(26, 74, 102, 0.9) 100%); /* Subtle gradient background */
-  border-radius: 1rem; /* Rounded for elegance */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deep shadow for depth */
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(8, 33, 46, 0.9) 0%, rgba(26, 74, 102, 0.9) 100%);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 95%;
 }
 
 .events-section p {
-  color: #CFF6F8; /* Brighter cyan for harmony with body */
-  font-size: 1.7rem; /* Slightly larger for prominence */
-  text-align: center;
+  color: #CFF6F8;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Bolder for premium feel */
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); /* Subtle glow */
-  margin: 1rem 0; /* Added margin for spacing */
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5);
+  margin: 0.5rem 0;
 }
 
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly larger min-width for cards */
-  gap: 2.5rem; /* Increased gap for a cleaner look */
-  margin-top: 2.5rem;
-  padding: 1rem;
-  
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  justify-items: center;
 }
 
-/* Optional: Styling for individual event cards (assuming they exist) */
-.events-grid > * {
-  background: linear-gradient(135deg, #1A4A66 0%, #08212E 100%); /* Dark techy gradient */
-  border: 2px solid #00D4FF; /* Neon border */
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); /* Subtle glow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.events-grid > *:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.5); /* Stronger glow */
-}
+/* Event Card */
 .event-card {
-  background: 
-    linear-gradient(
-      135deg,
-      rgba(4, 92, 90, 0.9) 0%, 
-      rgba(34, 180, 168, 0.8) 50%, 
-      rgba(12, 66, 181, 0.6) 100%
-    );
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(4, 92, 90, 0.9) 0%, rgba(34, 180, 168, 0.8) 50%, rgba(12, 66, 181, 0.6) 100%);
+  border: 2px solid #00D4FF;
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-/* Mobile view adjustments */
-@media screen and (max-width: 768px) {
-  .event-card {
-    border-radius: 8px; /* Slightly smaller radius for mobile */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for performance */
-    padding: 12px; /* Reduced padding for compact screens */
-    margin: 8px; /* Ensure spacing between cards */
-    transform: scale(1); /* Reset any hover scaling for touch devices */
-  }
-
-  .event-card:hover {
-    transform: scale(1.02); /* Subtle scale for touch feedback */
-  }
-
-  /* Adjust text and content inside the card for mobile */
-  .event-card h3,
-  .event-card p {
-    font-size: 0.9rem; /* Smaller text for mobile */
-    margin: 8px 0; /* Tighter spacing */
-    text-align: center; /* Center text for better readability */
-  }
-
-  .event-card img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto;
-    border-radius: 6px; /* Match card's rounded corners */
-  }
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
 }
 
 .event-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.5);
 }
 
 .event-card img {
   width: 100%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .event-body {
-  padding: 1rem;
-
+  padding: 0.75rem;
 }
 
-
 .event-body h3 {
-  padding: 0.4rem 1.5rem;
-  border-radius: 0.75rem;
-  margin: 0.5rem 0 1.5rem;
-  font-size: 1.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 800;
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%); /* Gold to orange gradient for a festive, premium feel */
-  color: #1A1A1A; /* Dark text for contrast */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 215, 0, 0.5); /* Glow effect */
+  background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
+  color: #1A1A1A;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 215, 0, 0.5);
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
-  text-transform: uppercase; /* Adds a bold, festive touch */
+  text-transform: uppercase;
 }
 
-/* Hover effect for interactivity */
 .event-body h3:hover {
-  transform: translateY(-2px); /* Slight lift */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.7); /* Enhanced glow */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.7);
 }
 
-/* Optional: Add a subtle sparkle effect using a pseudo-element */
 .event-body h3::before {
   content: '';
   position: absolute;
@@ -274,62 +225,54 @@ body {
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transition: 0.5s;
 }
 
 .event-body h3:hover::before {
-  left: 100%; /* Sparkle moves across on hover */
+  left: 100%;
 }
-
 
 .badge {
   display: inline-block;
   margin-bottom: 0.5rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 30px;
-  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
   color: white;
-  font-family: 'Poppins', sans-serif; /* Clean, modern for badges */
+  font-family: 'Poppins', sans-serif;
 }
 
-.badge.solo {
+.badge.solo, .badge.team {
   background-color: #0c36b4;
-}
-
-.badge.team {
-  background-color: #0c36b4;
-  margin-top: 0.5rem;
 }
 
 .event-meta {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem 0;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .event-buttons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   background-color: #300c83;
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   transition: background 0.3s;
-  font-family: 'Poppins', sans-serif; /* Modern for buttons */
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .btn:hover {
@@ -348,13 +291,13 @@ body {
 /* Sponsor Section */
 .sponsor-section {
   text-align: center;
-  padding: 4rem 1.5rem; /* Increased padding for spaciousness */
-  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%); /* Vibrant techy gradient */
-  overflow: hidden;
-  margin: 1.5rem; /* Slightly larger margins for balance */
-  border-radius: 1rem; /* Rounded for elegance */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 212, 255, 0.4); /* Neon glow and depth */
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%);
+  margin: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 212, 255, 0.4);
   position: relative;
+  overflow: hidden;
 }
 
 .sponsor-section::before {
@@ -364,66 +307,66 @@ body {
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent); /* Sparkle effect */
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transition: 0.6s;
 }
 
 .sponsor-section:hover::before {
-  left: 100%; /* Sparkle sweeps across on hover */
+  left: 100%;
 }
 
 .sponsor-section h2 {
-  font-size: 2.5rem; /* Larger for prominence */
-  margin-bottom: 1.5rem;
-  color: #FFFFFF; /* White for high contrast */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800; /* Bolder for premium impact */
-  text-transform: uppercase; /* Festive boldness */
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7), 0 0 12px rgba(0, 212, 255, 0.5); /* Neon glow */
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7), 0 0 12px rgba(0, 212, 255, 0.5);
   transition: transform 0.3s ease;
 }
 
 .sponsor-section h2:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
+  transform: translateY(-3px);
 }
 
 .sponsor-marquee {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 140px; /* Increased height for larger logos */
-  background: rgba(8, 33, 46, 0.9); /* Dark semi-transparent background for contrast */
-  border-radius: 0.75rem; /* Rounded for elegance */
-  box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.3); /* Subtle inner glow */
+  height: 100px;
+  background: rgba(8, 33, 46, 0.9);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
 .sponsor-track {
   display: flex;
-  gap: 4rem; /* Increased gap for cleaner spacing */
+  gap: 2rem;
   align-items: center;
-  animation: scroll-left 25s linear infinite; /* Slightly slower for smoother scrolling */
+  animation: scroll-left 20s linear infinite;
   width: max-content;
   will-change: transform;
 }
 
 .sponsor-marquee:hover .sponsor-track {
-  animation-play-state: paused; /* Retain pause on hover */
+  animation-play-state: paused;
 }
 
 .sponsor-track img {
-  height: 100px; /* Larger logos for premium visibility */
+  height: 60px;
   width: auto;
-  filter: grayscale(70%) brightness(0.9); /* Softer grayscale for a premium look */
+  filter: grayscale(70%) brightness(0.9);
   transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 0.5rem; /* Subtle rounding for logos */
-  padding: 0.5rem; /* Padding to enhance logo presentation */
-  background: rgba(255, 255, 255, 0.1); /* Subtle backdrop for logos */
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .sponsor-track img:hover {
-  filter: grayscale(0%) brightness(1.1); /* Vibrant colors on hover */
-  transform: scale(1.1); /* Slight zoom for interactivity */
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.5); /* Neon glow on hover */
+  filter: grayscale(0%) brightness(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.5);
 }
 
 /* Animation */
@@ -435,20 +378,20 @@ body {
     transform: translateX(-50%);
   }
 }
+
 /* Footer */
 footer {
-  background: linear-gradient(180deg, #08212E 0%, #1A4A66 100%); /* Consistent dark techy gradient */
-  color: #CFF6F8; /* Bright cyan for harmony with body */
+  background: linear-gradient(180deg, #08212E 0%, #1A4A66 100%);
+  color: #CFF6F8;
   text-align: center;
-  padding: 3rem 1.5rem; /* Increased padding for spaciousness */
-  margin-top: 3rem; /* Adjusted for balance */
-  border-top: 4px solid #00D4FF; /* Neon border for festive accent */
-  box-shadow: 0 -4px 12px rgba(0, 212, 255, 0.4); /* Subtle neon glow */
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 4px solid #00D4FF;
+  box-shadow: 0 -4px 12px rgba(0, 212, 255, 0.4);
   position: relative;
   overflow: hidden;
 }
 
-/* Sparkle effect for footer */
 footer::before {
   content: '';
   position: absolute;
@@ -461,66 +404,63 @@ footer::before {
 }
 
 footer:hover::before {
-  left: 100%; /* Sparkle sweeps across on hover */
+  left: 100%;
 }
 
 .footer-icons {
-  margin-bottom: 1.5rem; /* Increased for better spacing */
+  margin-bottom: 1rem;
 }
 
 .footer-icons a {
-  color: #FFFFFF; /* White for high contrast */
-  margin: 0 15px; /* Slightly larger spacing for elegance */
-  font-size: 2rem; /* Larger icons for prominence */
+  color: #FFFFFF;
+  margin: 0 10px;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .footer-icons a:hover {
-  color: #FFD700; /* Gold accent on hover for premium feel */
-  transform: scale(1.2); /* Slight zoom on hover */
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7); /* Neon glow */
+  color: #FFD700;
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
 }
 
 /* Navbar */
 .navbar {
-  background: linear-gradient(90deg, #094C9B 0%, #00D4FF 100%); /* Vibrant techy gradient */
+  background: linear-gradient(90deg, #094C9B 0%, #00D4FF 100%);
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2.5rem; /* Increased padding for spaciousness */
+  padding: 1rem 1.5rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4); /* Neon glow */
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
   transition: box-shadow 0.3s ease;
-  font-weight: 800;
 }
 
 .navbar:hover {
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.6); /* Enhanced glow on hover */
+  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.6);
 }
 
 .nav-logo {
-  font-size: 2rem; /* Larger for prominence */
-  font-weight: 800; /* Bolder for premium impact */
+  font-size: 1.5rem;
+  font-weight: 800;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase; /* Festive boldness */
+  text-transform: uppercase;
   color: #FFFFFF;
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7); /* Neon glow */
-  position: relative;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
   transition: transform 0.3s ease;
 }
 
 .nav-logo:hover {
-  transform: translateY(-2px); /* Slight lift on hover */
+  transform: translateY(-2px);
 }
 
-/* Sparkle effect for logo */
 .nav-logo::before {
   content: '';
   position: absolute;
@@ -533,35 +473,35 @@ footer:hover::before {
 }
 
 .nav-logo:hover::before {
-  left: 100%; /* Sparkle sweeps across on hover */
+  left: 100%;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem; /* Increased gap for cleaner spacing */
+  gap: 1.5rem;
 }
 
 .nav-links li a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 1.2rem; /* Slightly larger for readability */
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Bolder for premium feel */
-  padding: 0.5rem 1rem; /* Larger padding for clickability */
-  border-radius: 0.5rem; /* Subtle rounding */
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
   transition: color 0.3s ease, text-shadow 0.3s ease, background 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #FFD700; /* Gold accent for premium festive vibe */
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.7); /* Neon glow */
-  background: rgba(255, 215, 0, 0.1); /* Subtle gold backdrop on hover */
-  transform: translateY(-2px); /* Slight lift */
+  color: #FFD700;
+  text-shadow: 0 0 6px rgba(0, 212, 255, 0.7);
+  background: rgba(255, 215, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .mobile-menu {
-  font-size: 2rem; /* Larger for visibility */
+  font-size: 1.5rem;
   cursor: pointer;
   display: none;
   background: none;
@@ -571,27 +511,18 @@ footer:hover::before {
 }
 
 .mobile-menu:hover {
-  color: #FFD700; /* Gold on hover */
-  transform: scale(1.1); /* Slight zoom */
+  color: #FFD700;
+  transform: scale(1.1);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Hide links on mobile, assuming JS toggles visibility */
-  }
-  .mobile-menu {
-    display: block; /* Show hamburger menu */
-  }
-}
 /* Bootcamp Header */
 .bootcamp-header {
   text-align: center;
-  padding: 3rem 1.5rem; /* Increased for spaciousness */
-  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%); /* Vibrant techy gradient */
-  border-radius: 1rem;
-  margin: 2rem 1.5rem; /* Consistent with previous sections */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 212, 255, 0.4); /* Neon glow */
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%);
+  border-radius: 0.75rem;
+  margin: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 212, 255, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -608,39 +539,242 @@ footer:hover::before {
 }
 
 .bootcamp-header:hover::before {
-  left: 100%; /* Sparkle effect on hover */
+  left: 100%;
 }
 
 .bootcamp-header h1 {
-  padding-top: 0; /* Removed to rely on parent padding */
-  color: #FFFFFF; /* White for high contrast */
-  font-size: 3rem; /* Larger for prominence */
+  color: #FFFFFF;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800; /* Bolder for premium impact */
-  text-transform: uppercase; /* Festive boldness */
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7); /* Neon glow */
-  margin-bottom: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
+  margin-bottom: 0.75rem;
   transition: transform 0.3s ease;
 }
 
 .bootcamp-header h1:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
+  transform: translateY(-3px);
 }
 
 .bootcamp-header h1 i {
-  margin-right: 0.5rem; /* Space for Font Awesome icon */
-  color: #FFD700; /* Gold accent for premium feel */
+  margin-right: 0.5rem;
+  color: #FFD700;
 }
 
 .bootcamp-header p {
-  padding-top: 0; /* Removed to rely on parent padding */
-  color: #CFF6F8; /* Bright cyan for consistency */
-  font-size: 1.8rem; /* Larger for prominence */
+  color: #CFF6F8;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Bolder for premium feel */
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); /* Subtle neon glow */
-  margin-bottom: 1rem;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(0, 212, 255, 0.5);
+  margin-bottom: 0.75rem;
 }
+
+/* Registration Button */
+.reg-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #008BCC, #00D4FF);
+  border: 2px solid #00D4FF;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  margin: 1rem auto;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.reg-button:hover {
+  background: linear-gradient(90deg, #00D4FF, #008BCC);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.5);
+}
+
+.reg-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
+}
+
+.reg-button i {
+  margin-right: 0.5rem;
+  color: #FFD700;
+}
+
+.reg-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.5s;
+}
+
+.reg-button:hover::after {
+  left: 100%;
+  top: 100%;
+}
+
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+  /* General */
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* Banner */
+  .main-banner img {
+    height: auto;
+  }
+
+  /* Countdown */
+  #countdown {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  /* Fest Heading */
+  .fest-heading {
+    padding: 1.5rem 0.75rem;
+  }
+  .fest-heading h1 {
+    font-size: 2rem;
+  }
+  .fest-heading p {
+    font-size: 1.2rem;
+  }
+
+  /* Events Section */
+  .events-section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .events-section h1 {
+    font-size: 1.5rem;
+  }
+  .events-section p {
+    font-size: 1rem;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  /* Event Card */
+  .event-card {
+    max-width: 90%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 10px rgba(0, 212, 255, 0.3);
+  }
+  .event-card img {
+    height: 120px;
+  }
+  .event-body h3 {
+    font-size: 1rem;
+    padding: 0.2rem 0.75rem;
+  }
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
+  .event-meta {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+  .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Sponsor Section */
+  .sponsor-section {
+    padding: 1.5rem 0.75rem;
+    margin: 0.75rem;
+  }
+  .sponsor-section h2 {
+    font-size: 1.5rem;
+  }
+  .sponsor-marquee {
+    height: 80px;
+  }
+  .sponsor-track img {
+    height: 50px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.5rem 0.75rem;
+  }
+  .footer-icons a {
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #094C9B 0%, #00D4FF 100%);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  /* Bootcamp Header */
+  .bootcamp-header {
+    padding: 1.5rem 0.75rem;
+    margin: 1rem;
+  }
+  .bootcamp-header h1 {
+    font-size: 1.5rem;
+  }
+  .bootcamp-header p {
+    font-size: 1rem;
+  }
 
 /* Registration Button */
 .reg-button {
@@ -771,7 +905,4 @@ footer:hover::before {
     display: block; /* Show hamburger menu on mobile */
   }
 }
-
-
-
 
