@@ -6,16 +6,6 @@
 }
 
 body {
-<<<<<<< HEAD
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: rgb(8, 33, 46);
-  color: #a9e0e3;
-}
-
-
-
-=======
   font-family: 'Roboto', sans-serif; /* Keep modern, techy font */
   line-height: 1.6;
   background: linear-gradient(135deg, #08212E 0%, #1A4A66 100%); /* Gradient for depth and festivity */
@@ -23,27 +13,10 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
->>>>>>> 457f0fc (complete)
 /* Banner */
 .main-banner img {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
-}
-
- #countdown  {
-  margin-top: 10px;
-  font-weight: 600; /* Slightly bolder for elegance */
-  color: #008BCC;
-  font-size: 1.8rem; /* Larger size for more impact */
-  letter-spacing: 1px; /* Adds luxury spacing */
-  font-family: 'Playfair Display', serif; /* Elegant font */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
-  background:#E9ECEF;
-  text-align: center;
-}
-
-=======
   filter: brightness(1.1) saturate(1.2); /* Enhance image vibrancy */
   border-bottom: 4px solid #00D4FF; /* Neon accent for techy festival vibe */
   box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); /* Subtle neon glow */
@@ -70,28 +43,10 @@ body {
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6); /* Stronger glow */
 }
->>>>>>> 457f0fc (complete)
 
 /* Fest Heading */
 .fest-heading {
   text-align: center;
-<<<<<<< HEAD
-  padding: 2rem 1rem;
-  background-color: #E9ECEF; 
-  color: #fff;
-}
-
-.fest-heading h1 {
-    color: #094C9B;
-  font-size: 5rem;
-  font: se;
-  margin-bottom: 0.5rem;
-}
-.fest-heading p {
-    color: #094C9B;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-=======
   padding: 3rem 1.5rem;
   background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%); /* Vibrant, techy gradient */
   color: #FFFFFF;
@@ -138,31 +93,10 @@ body {
   font-weight: 500; /* Slightly bolder for premium feel */
   text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); /* Subtle glow */
   margin-bottom: 0.75rem;
->>>>>>> 457f0fc (complete)
 }
 
 /* Events Section */
 .events-section h1 {
-<<<<<<< HEAD
-   color: #094C9B;
-    font-size: 2rem;
-  padding: 1rem 1rem;
-  text-align: center;
-  
-}
-.events-section
-{
-  margin-bottom: 20px ;
-  padding-left: 10px;
-  padding-right: 10px;
-   
-}
-.events-section p {
-    color: #008BCC;
-    font-size: 1.5rem;
-
-  text-align: center;
-=======
   color: #FFFFFF; /* White for high contrast and premium feel */
   font-size: 2.5rem; /* Slightly larger for impact */
   padding: 1.5rem 1rem;
@@ -216,20 +150,10 @@ body {
   font-weight: 500; /* Bolder for premium feel */
   text-shadow: 0 0 6px rgba(0, 212, 255, 0.5); /* Subtle glow */
   margin: 1rem 0; /* Added margin for spacing */
->>>>>>> 457f0fc (complete)
 }
 
 .events-grid {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.event-card {
- background: 
-=======
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly larger min-width for cards */
   gap: 2.5rem; /* Increased gap for a cleaner look */
   margin-top: 2.5rem;
@@ -252,26 +176,18 @@ body {
 }
 .event-card {
   background: 
->>>>>>> 457f0fc (complete)
     linear-gradient(
       135deg,
       rgba(4, 92, 90, 0.9) 0%, 
       rgba(34, 180, 168, 0.8) 50%, 
       rgba(12, 66, 181, 0.6) 100%
     );
-<<<<<<< HEAD
-  
-=======
->>>>>>> 457f0fc (complete)
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
-<<<<<<< HEAD
-=======
   position: relative;
   z-index: 1;
->>>>>>> 457f0fc (complete)
 }
 
 .event-card:hover {
@@ -281,24 +197,11 @@ body {
 .event-card img {
   width: 100%;
   height: 180px;
-<<<<<<< HEAD
- 
-=======
->>>>>>> 457f0fc (complete)
   object-fit: cover;
 }
 
 .event-body {
   padding: 1rem;
-<<<<<<< HEAD
-}
-
-.event-body h3 {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-}
-
-=======
 
 }
 
@@ -348,7 +251,6 @@ body {
 }
 
 
->>>>>>> 457f0fc (complete)
 .badge {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -356,10 +258,7 @@ body {
   border-radius: 30px;
   font-size: 0.9rem;
   color: white;
-<<<<<<< HEAD
-=======
   font-family: 'Poppins', sans-serif; /* Clean, modern for badges */
->>>>>>> 457f0fc (complete)
 }
 
 .badge.solo {
@@ -368,10 +267,7 @@ body {
 
 .badge.team {
   background-color: #0c36b4;
-<<<<<<< HEAD
-=======
   margin-top: 0.5rem;
->>>>>>> 457f0fc (complete)
 }
 
 .event-meta {
@@ -390,20 +286,13 @@ body {
 
 .btn {
   padding: 0.5rem 1rem;
-<<<<<<< HEAD
-    background-color: #300c83;;
-=======
   background-color: #300c83;
->>>>>>> 457f0fc (complete)
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.3s;
-<<<<<<< HEAD
-=======
   font-family: 'Poppins', sans-serif; /* Modern for buttons */
   font-weight: 500;
->>>>>>> 457f0fc (complete)
 }
 
 .btn:hover {
@@ -419,24 +308,6 @@ body {
   background: #c9ef0b;
 }
 
-<<<<<<< HEAD
-
-/* Sponsor Section */
-.sponsor-section {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #094C9B;
-  overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
-
-}
-
-.sponsor-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: white;
-=======
 /* Sponsor Section */
 .sponsor-section {
   text-align: center;
@@ -477,53 +348,28 @@ body {
 
 .sponsor-section h2:hover {
   transform: translateY(-3px); /* Slight lift on hover */
->>>>>>> 457f0fc (complete)
 }
 
 .sponsor-marquee {
   overflow: hidden;
   position: relative;
   width: 100%;
-<<<<<<< HEAD
-  height: 120px;
-=======
   height: 140px; /* Increased height for larger logos */
   background: rgba(8, 33, 46, 0.9); /* Dark semi-transparent background for contrast */
   border-radius: 0.75rem; /* Rounded for elegance */
   box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.3); /* Subtle inner glow */
->>>>>>> 457f0fc (complete)
 }
 
 .sponsor-track {
   display: flex;
-<<<<<<< HEAD
-  gap: 3rem;
-  align-items: center;
-  animation: scroll-left 20s linear infinite;
-=======
   gap: 4rem; /* Increased gap for cleaner spacing */
   align-items: center;
   animation: scroll-left 25s linear infinite; /* Slightly slower for smoother scrolling */
->>>>>>> 457f0fc (complete)
   width: max-content;
   will-change: transform;
 }
 
 .sponsor-marquee:hover .sponsor-track {
-<<<<<<< HEAD
-  animation-play-state: paused; /* Pause on hover */
-}
-
-.sponsor-track img {
-  height: 80px;
-  width: auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.sponsor-track img:hover {
-  filter: grayscale(0%);
-=======
   animation-play-state: paused; /* Retain pause on hover */
 }
 
@@ -541,7 +387,6 @@ body {
   filter: grayscale(0%) brightness(1.1); /* Vibrant colors on hover */
   transform: scale(1.1); /* Slight zoom for interactivity */
   box-shadow: 0 4px 12px rgba(0, 212, 255, 0.5); /* Neon glow on hover */
->>>>>>> 457f0fc (complete)
 }
 
 /* Animation */
@@ -553,225 +398,6 @@ body {
     transform: translateX(-50%);
   }
 }
-<<<<<<< HEAD
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 40px;
-}
-
-.footer-icons {
-  margin-bottom: 1rem;
-}
-
-.footer-icons a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.5rem;
-}
-
-/* navbar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-}
-
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-
-        .navbar {
-            background: #1a237e;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            position: relative;
-        }
-        .navbar {
-  position: sticky; /* or 'fixed' if it's a fixed header */
-  z-index: 1000;   /* Higher than cards */
-}
-
-.event-card {
-  position: relative;
-  z-index: 1;      
-}
-
-        .nav-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 1.5rem;
-        }
-
-        .nav-links li a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-            padding: 0.5rem;
-        }
-
-        .nav-links li a:hover {
-            color: #ffc107;
-        }
-
-        .mobile-menu {
-            font-size: 1.8rem;
-            cursor: pointer;
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .mobile-menu {
-                display: block;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background-color: #094C9B;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-                transition: all 0.5s ease;
-                z-index: 1000;
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 15px 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .nav-links li a {
-                display: block;
-                padding: 10px;
-            }
-        }
-     
-/* Add these to your existing CSS */
-body {
-    padding-top: 70px; /* Adjust based on your navbar height */
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* Your existing navbar styles remain */
-}
-
-/* Mobile menu styles (if not already present) */
-.mobile-menu {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .mobile-menu {
-        display: block;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: #094C9B;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        transition: all 0.5s ease;
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .nav-links li {
-        margin: 15px 0;
-    }
-}
-
-/* navbar end */
-
-/* bootcamp css */
-/* .bootcamp-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid var(--secondary-color);
-} */
-
-.bootcamp-header h1 {
-   padding-top: 20px;
-   text-align: center;
-    color: #300c83;
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.bootcamp-header p {
-  padding-top: 10px;
-   text-align: center;
-    color: #666;
-    font-size: 1.1rem;
-}
-
-
-/* registraiton button */
-.reg-button {
-  
-  background-color: #300c83;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(48, 12, 131, 0.3);
-  display: block;
-  margin: 20px auto;
-  width: fit-content;
-=======
 /* Footer */
 footer {
   background: linear-gradient(180deg, #08212E 0%, #1A4A66 100%); /* Consistent dark techy gradient */
@@ -781,25 +407,10 @@ footer {
   margin-top: 3rem; /* Adjusted for balance */
   border-top: 4px solid #00D4FF; /* Neon border for festive accent */
   box-shadow: 0 -4px 12px rgba(0, 212, 255, 0.4); /* Subtle neon glow */
->>>>>>> 457f0fc (complete)
   position: relative;
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-.reg-button:hover {
-  background-color: #4415a8;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(48, 12, 131, 0.4);
-}
-
-.reg-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(48, 12, 131, 0.4);
-}
-
-/* Optional: Add a subtle shine effect */
-=======
 /* Sparkle effect for footer */
 footer::before {
   content: '';
@@ -1032,7 +643,6 @@ footer:hover::before {
   color: #FFD700; /* Gold accent */
 }
 
->>>>>>> 457f0fc (complete)
 .reg-button::after {
   content: '';
   position: absolute;
@@ -1044,27 +654,16 @@ footer:hover::before {
     to bottom right,
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0) 40%,
-<<<<<<< HEAD
-    rgba(255, 255, 255, 0.2) 50%,
-=======
     rgba(255, 255, 255, 0.3) 50%,
->>>>>>> 457f0fc (complete)
     rgba(255, 255, 255, 0) 60%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: rotate(30deg);
-<<<<<<< HEAD
-  transition: all 0.3s;
-=======
   transition: all 0.5s;
->>>>>>> 457f0fc (complete)
 }
 
 .reg-button:hover::after {
   left: 100%;
-<<<<<<< HEAD
-  top: 100%;
-=======
   top: 100%; /* Sparkle sweep on hover */
 }
 
@@ -1120,5 +719,4 @@ footer:hover::before {
     background: rgba(255, 215, 0, 0.1);
     transform: translateY(-2px);
   }
->>>>>>> 457f0fc (complete)
 }
