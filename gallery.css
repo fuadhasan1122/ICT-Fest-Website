@@ -125,7 +125,13 @@
 /* group A,B div */
  .child-1,.child-2{
   
-  background-color: #1c58b3;
+  background: 
+    linear-gradient(
+      135deg,
+      rgba(4, 92, 90, 0.9) 0%, 
+      rgba(34, 180, 168, 0.8) 50%, 
+      rgba(12, 66, 181, 0.6) 100%
+    );
   color: white;
   border: none;
   padding: 12px 24px;
