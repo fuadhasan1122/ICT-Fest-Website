@@ -40,9 +40,3 @@ document.getElementById('mobileMenuBtn').addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Close menu when a nav link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.remove('active');
-  });
-});
