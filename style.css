@@ -15,12 +15,14 @@ body {
 
 /* Banner */
 .main-banner img {
+   margin-top: 100px;
   width: 100%;
   height: auto;
   filter: brightness(1.1) saturate(1.2);
   border-bottom: 4px solid #00D4FF;
   box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
 }
+
 
 /* Countdown */
 #countdown {

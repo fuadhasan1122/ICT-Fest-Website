@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Reset and Base Styles */
         * {
@@ -38,7 +39,6 @@
             margin-right: 50px;
         }
 
-         
         /* Contact Section */
         .contact-section {
             background-color: white;
@@ -129,14 +129,18 @@
             margin-bottom: 10px;
         }
         
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
+        .contact-card p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
         }
+        
+        .contact-card p i {
+            margin-right: 10px;
+            color: #0056b3;
+        }
+        
+       
     </style>
 </head>
 <body>
@@ -144,18 +148,13 @@
         <div class="nav-logo">ICT FEST 2025</div>
         
         <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="about.html">Events</a></li>
-                  <li><a href="boothcamp.html">CP Bootcamp</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Events</a></li>
+            <li><a href="boothcamp.html">CP Bootcamp</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <!-- <li><a href="#">Contest</a></li> -->
-        
-              
-              <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        
-       
         
         <div class="mobile-menu" id="mobileMenuBtn">☰</div>
     </nav>
@@ -168,28 +167,27 @@
     
     <div class="container">
         <section class="contact-section">
- 
             <h2 style="margin-top: 40px;">Contact Information</h2>
             
             <div class="contact-info">
                 <div class="contact-card">
-                    <h3>location</h3>
+                    <h3>Location</h3>
                     <p>Shamimabad, Bagbari</p>
                     <p>Sylhet-3100, Bangladesh</p>
                 </div>
                 
                 <div class="contact-card">
                     <h3>Phone & Email</h3>
-                    <p>Phone: +880 2 9123456</p>
+                    <p>Phone: +880 1712 345678</p>
                     <p>Mobile: +880 1712 345678</p>
-                    <p>Email: about@ictfest.org.bd</p>
+                    <p><i class="fas fa-envelope"></i>Email: cse@siu.edu.bd</p>
                 </div>
                 
                 <div class="contact-card">
-                    <h3>Office Hours</h3>
-                    <p>Saturday to Wednesday: 9:00 AM - 5:00 PM</p>
-                    <p>Thursday & Friday: Closed</p>
-                    <p>Public Holidays: Closed</p>
+                    <h3>Follow Us</h3>
+                    <p><i class="fas fa-envelope"></i><a href="mailto:ictfest2025@gmail.com">ictfest2025@gmail.com</a></p>
+                    <p><i class="fab fa-facebook"></i><a href="https://www.facebook.com/csesiu" target="_blank">Dept. of CSE</a></p>
+                    <p><i class="fab fa-facebook"></i><a href="https://www.facebook.com/siuictfest" target="_blank">SIU ICT Fest 2025</a></p>
                 </div>
             </div>
         </section>
@@ -197,6 +195,11 @@
     
     <footer>
         <div class="container">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/siuictfest" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:cse@siu.edu.bd"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>Developed & Designed by <strong>Fuad Hasan,</strong><strong>Tarakur Rahman</strong></p>
             <p>&copy; SIU ICT FEST 2025; All Rights Reserved.</p>
         </div>
     </footer>
@@ -215,6 +218,6 @@
         });
     </script>
     
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
