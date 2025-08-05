@@ -13,15 +13,48 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Banner */
-.main-banner img {
+.main-banner {
   width: 100%;
-  height: auto;
-  filter: brightness(1.1) saturate(1.2); /* Enhance image vibrancy */
-  border-bottom: 4px solid #00D4FF; /* Neon accent for techy festival vibe */
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); /* Subtle neon glow */
+  overflow: visible; /* Ensures no clipping of the image */
+  position: relative; /* Provides context for image positioning */
 }
 
+.main-banner img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio, prevents cropping */
+  display: block; /* Removes extra space below image */
+  filter: brightness(1.1) saturate(1.2); /* Enhance image vibrancy */
+  border-top: 4px solid #00D4FF; /* Neon accent for techy festival vibe */
+  border-bottom: 4px solid #00D4FF; /* Neon accent for consistency */
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); /* Subtle neon glow */
+  object-fit: contain; /* Ensures full image is visible without cropping */
+  margin: 0; /* Prevents unintended offsets */
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  .main-banner {
+    max-width: 100%; /* Ensures banner fits within viewport */
+    padding: 0; /* Removes any padding that might cause overflow */
+  }
+
+  .main-banner img {
+    border-width: 2px; /* Thinner borders for mobile */
+    box-shadow: 0 2px 6px rgba(0, 212, 255, 0.2); /* Softer, less intense glow for smaller screens */
+    filter: brightness(1.05) saturate(1.1); /* Slightly toned-down filter for better mobile visibility */
+    max-height: 80vh; /* Limits image height to avoid excessive scrolling */
+    object-fit: cover; /* Switches to cover for better mobile framing, if desired */
+    border-radius: 4px; /* Subtle rounding for a polished look */
+  }
+}
+
+/* High-density displays (e.g., Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-banner img {
+    image-rendering: -webkit-optimize-contrast; /* Crisper images on high-DPI screens */
+    image-rendering: crisp-edges; /* Fallback for non-WebKit browsers */
+  }
+}
 /* Countdown */
 #countdown {
   margin: 1.5rem auto;
@@ -158,6 +191,7 @@ body {
   gap: 2.5rem; /* Increased gap for a cleaner look */
   margin-top: 2.5rem;
   padding: 1rem;
+  align-items: center;
 }
 
 /* Optional: Styling for individual event cards (assuming they exist) */
@@ -672,7 +706,7 @@ footer:hover::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-color: #333; /* Adjust to your theme */
   color: white;
 }
@@ -734,3 +768,7 @@ footer:hover::before {
     display: block; /* Show hamburger menu on mobile */
   }
 }
+
+
+
+
