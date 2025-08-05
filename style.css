@@ -131,7 +131,7 @@ body {
 }
 
 .badge.team {
-  background-color: #e67e22;
+  background-color: #0c36b4;
 }
 
 .event-meta {
@@ -150,7 +150,7 @@ body {
 
 .btn {
   padding: 0.5rem 1rem;
-  background: #3366cc;
+    background-color: #300c83;;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
