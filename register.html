@@ -223,7 +223,7 @@
       border-radius: 12px;
       text-align: center;
       margin-top: 30px;
-      box-shadow: 0 5px極端15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     .footer-icons {
@@ -283,7 +283,7 @@
     .tab-button {
       background: rgba(255, 255, 255, 0.2);
       border: none;
-      padding: 12px極端24px;
+      padding: 12px 24px;
       border-radius: 8px 8px 0 0;
       font-weight: 500;
       cursor: pointer;
@@ -354,7 +354,10 @@
       <button class="mobile-menu" id="mobileMenuBtn">☰</button>
     </nav>
 
-    
+    <div class="tabs">
+      <button class="tab-button active" id="registerTab">Register</button>
+      <button class="tab-button" id="statusTab">Check Status</button>
+    </div>
 
     <section class="registration-section" id="registerSection">
       <h2>Event Registration</h2>
@@ -415,11 +418,56 @@
         <i class="fas fa-check-circle"></i>
         <p>Registration successful! Your data has been saved.</p>
       </div>
-
-      
     </section>
 
-    
+    <div class="status-container" id="statusSection">
+      <h2>Check Your Registration Status</h2>
+      
+      <form id="searchForm" class="registration-form">
+        <label>
+          Search by:
+          <select id="searchType">
+            <option value="email">Email Address</option>
+            <option value="transaction">Transaction ID</option>
+          </select>
+        </label>
+        
+        <label id="emailField">
+          Email Address
+          <input type="email" id="searchEmail" required placeholder="Enter your registered email">
+        </label>
+        
+        <label id="transactionField" style="display: none;">
+          Transaction ID
+          <input type="text" id="searchTransaction" placeholder="Enter your transaction ID">
+        </label>
+        
+        <button type="submit">Search Registration</button>
+      </form>
+      
+      <p class="help-text">Enter your email address or transaction ID to check your registration status</p>
+      
+      <div id="resultContainer" class="result-container">
+        <div class="result-header">
+          <h3>Registration Details</h3>
+          <span class="status-badge status-confirmed">Confirmed</span>
+        </div>
+        
+        <div class="registration-details">
+          <div class="detail-item"><strong>Name:</strong> <span id="resultName">Fuad Hasan</span></div>
+          <div class="detail-item"><strong>Email:</strong> <span id="resultEmail">fuad@example.com</span></div>
+          <div class="detail-item"><strong>Phone:</strong> <span id="resultPhone">+8801712345678</span></div>
+          <div class="detail-item"><strong>Department:</strong> <span id="resultDept">CSE</span></div>
+          <div class="detail-item"><strong>Semester:</strong> <span id="resultSemester">4th Year 2nd Semester</span></div>
+          <div class="detail-item"><strong>Event:</strong> <span id="resultEvent">Intra University Programming Contest</span></div>
+          <div class="detail-item"><strong>Transaction ID:</strong> <span id="resultTransaction">TX123456789</span></div>
+          <div class="detail-item"><strong>Registration Date:</strong> <span id="resultDate">October 15, 2023</span></div>
+        </div>
+      </div>
+      
+      <div id="noResults" class="no-results">
+        No registration found with the provided information. Please check your details and try again.
+      </div>
     </div>
     
     <footer>
@@ -445,7 +493,7 @@
       projectId: "siuictfest2025",
       storageBucket: "siuictfest2025.firebasestorage.app",
       messagingSenderId: "276279577613",
-      appId: "1:276279577極端13:web:87e1655ed261d2bcaa5944",
+      appId: "1:276279577613:web:87e1655ed261d2bcaa5944",
       measurementId: "G-S6H6DFEEGZ"
     };
 
@@ -469,7 +517,7 @@
 
     document.getElementById('statusTab').addEventListener('click', function() {
       document.getElementById('registerSection').style.display = 'none';
-      document.getElementById('statusSection極端').style.display = 'block';
+      document.getElementById('statusSection').style.display = 'block';
       document.getElementById('registerTab').classList.remove('active');
       document.getElementById('statusTab').classList.add('active');
     });
