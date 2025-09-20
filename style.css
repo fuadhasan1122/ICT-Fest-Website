@@ -293,6 +293,7 @@ body {
 /* Sponsor Section */
 .sponsor-section {
   text-align: center;
+  padding-top: 5px;
   padding: 2rem 1rem;
   background: linear-gradient(135deg, #094C9B 0%, #00D4FF 100%);
   margin: 1rem;
@@ -356,6 +357,7 @@ body {
 }
 
 .sponsor-track img {
+  
   height: 60px;
   width: auto;
   filter: grayscale(70%) brightness(0.9);
@@ -496,9 +498,9 @@ footer:hover::before {
 }
 
 .nav-links li a:hover {
-  color: #FFD700;
-  text-shadow: 0 0 6px rgba(0, 212, 255, 0.7);
-  background: rgba(255, 215, 0, 0.1);
+  color: #05f115;
+  text-shadow: 0 0 6px rgba(236, 7, 45, 0.7);
+  background: rgba(182, 85, 211, 0.1);
   transform: translateY(-2px);
 }
 
