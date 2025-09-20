@@ -1,4 +1,4 @@
-  const eventDate = new Date("2025-08-09T00:00:00").getTime(); // Fixed date format
+  const eventDate = new Date("2025-10-15T00:00:00").getTime();
     const countdown = document.getElementById("countdown");
 
     const x = setInterval(() => {
