@@ -1,4 +1,4 @@
-  const eventDate = new Date("2025-10-15T00:00:00").getTime();
+  const eventDate = new Date("2025-10-13T09:00:00").getTime();
     const countdown = document.getElementById("countdown");
 
     const x = setInterval(() => {
